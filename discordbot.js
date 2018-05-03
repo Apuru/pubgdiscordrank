@@ -37,26 +37,7 @@ bot.on("message", msg => {
       }
 
     //console.log (Object.keys(data.Stats));
-
-    // fs.writeFileSync("new.json", JSON.stringify(data.Stats[0],null, 2));
-    /*
-    if (data.MatchHistory[0].RatingRank === 'undefined') {
-      msg.channel.send("No stats found for your nickname, please change it to your in-game name.")
-    }
-    else {
-      // send our embed
-      var embed = new Discord.RichEmbed()
-        .setTitle(":thinking: Success!")
-        .setColor(0x00AE86)
-        .setDescription("Your rank is " + data.MatchHistory[0].RatingRank)
-        .setTimestamp()
-      msg.channel.send({embed})
-      .catch(err => console.log(err));
-      }
-      */
     });
-
-
   };
 });
 
